@@ -9,7 +9,7 @@ using namespace std;
 int main() {
     float num1{0}, num2{0};
    char a{0};
-    cout << "Bienvenido este programa realiza operaciones basicas con numeros flotantes, \n Ingresa el primer número" << endl;
+    cout << "Bienvenido este programa realiza operaciones basicas con numeros flotantes. \n Ingresa el primer número:" << endl;
     cin >> num1;
     cout << "¿Que quieres hacer?"<< endl;
     cin >> a;
@@ -19,13 +19,13 @@ int main() {
 
     switch (a) {
         case '+':
-            cout << "resultado:" <<num1<<"+" << num2 << "=" << num1+num2 << endl;
+            cout << "Resultado: \n" <<num1<<" + " << num2 << " = " << num1+num2 << endl;
             break;
         case '-':
-            cout << "resultado:" <<num1<<"-" << num2 << "=" << num1-num2 << endl;
+            cout << "Resultado: \n" <<num1<<" - " << num2 << " = " << num1-num2 << endl;
             break;
         case '*':
-            cout << "resultado:" <<num1<<"*" << num2 << "=" << num1*num2 << endl;
+            cout << "Resultado:  \n" <<num1<<" * " << num2 << " = " << num1*num2 << endl;
 
             break;
         case '/':
@@ -33,16 +33,16 @@ int main() {
                 cout << "Resultado indeterminado"<< endl;
 
             } else{
-                cout <<"Resultados:" <<num1<<"/" << num2 << "=" << num1/num2 << endl;
+                cout <<"Resultado: \n" <<num1<<" / " << num2 << " = " << num1/num2 << endl;
             }
             break;
 
         case '%':
             if (num2 == 0){
-                cout << "resultado indeterminado"<< endl;
+                cout << "Resultado indeterminado"<< endl;
 
             } else{
-                cout << "resultado:" <<num1<<"%" << num2 << "=" << fmod(num1,num2) << endl;
+                cout << "Resultado: \n" <<num1<<" % " << num2 << " = " << fmod(num1,num2) << endl;
             }
             break;
         default:
@@ -54,3 +54,4 @@ int main() {
     }
     return 0;
 }
+
